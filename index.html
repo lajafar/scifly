@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+         <!-- General -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SkyFly - Экомониторинг при помощи ИИ</title>
+        <meta name="description" content="Экомониторинг при помощи ИИ">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/favicon.png">
+
+        <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">  
+
+        <!-- CSS CDN -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- CSS custom -->
+
+        <link rel="stylesheet" href="index.css">
+
+        <!-- Google fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!-- Google tag (gtag.js) -->
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <!-- Navigation bar -->
+
+            <nav id="nav">
+                <a href="/">
+                    <h5 class="logo">SkyFly</h5>
+                </a>
+
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <iconify-icon icon="iconamoon:menu-burger-horizontal-light" style="color: #fff;" width="36" height="36"></iconify-icon>
+                </div>
+
+                <ul class="nav-links">
+                    <a href="#about">О нас</a>
+                    <a href="#team">Команда</a>
+                    <a href="#projects">Наши проекты</a>
+                    <a href="mailto:support@skyfly.com">Связаться</a>
+                    <!-- <a href="#team">Eng</a> -->
+                </ul>
+
+            </nav>
+
+            <!-- Menu mobile -->
+            <div class="menu-modal" id="menuModal">
+                <div class="menu-content">
+                    <div class="close-modal" onclick="toggleMenu()">
+                    <iconify-icon icon="material-symbols-light:close"></iconify-icon>
+                    </div>
+                    <a href="#about">О нас</a>
+                    <a href="#team">Команда</a>
+                    <a href="#projects">Наши проекты</a>
+                    <a href="mailto:support@skyfly.com">Связаться</a>
+                    <!-- <a href="#team">Eng</a> -->
+                </div>
+            </div> 
+        </header>
+
+        <main>
+            <!-- Hero -->
+
+            <section class="hero">
+                <h1>Экомониторинг <br> при помощи Искуственного Интеллекта</h1>
+                <img src="./assets/hero-pic.JPG"/>
+            </section>
+
+            <!-- Our projects -->
+
+            <section id="projects" class="projects">
+                <h2>Наши проекты</h2>
+
+                <!-- Project 1 -->
+                <div class="project-wrap">
+                    <div class="project-card">
+                            <img class="preview" src="./assets/project-1-card.png"/>
+                            <div class="card-left-col">
+                                <div class="project-content">
+                                    <div class="tags">
+                                        <div class="tag neutral">
+                                            <p>ML пайплайн</p>
+                                        </div>
+                                        <div class="tag beige">
+                                            <p>Компьютерное видение</p>
+                                        </div>
+                                        <div class="tag blue">
+                                            <p>Облачные технологии</p>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <h3>Сохранение кудрявого и розового пеликанов</h3>
+                                        <p>«Сохранение кудрявого и розового пеликанов» — программа по изучению и защите редких птиц в дикой природе. Чтобы сохранить российскую популяцию пеликанов, ученым нужно вести мониторинг, оценивать численность птиц и следить за их перемещениями, благополучием гнездовых колоний. </p>
+                                        <a href="./pelican-project.html">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div> 
+                    <div class="project-card-col">
+                        <div class="project-card-short">
+                            <img class="preview" src="./assets/project-2-card.JPG"/>
+                            <div class="card-left-col">
+                                <div class="project-content">
+                                    <div class="description-short">
+                                        <h3>Мониторинг колоний австралийских пеликанов</h3>
+                                        <p>Проект в разработке</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-short">
+                            <img class="preview" src="./assets/project-3-card.JPG"/>
+                            <div class="card-left-col">
+                                <div class="project-content">
+                                    <div class="description-short">
+                                        <h3>Мониторинг сайгаков</h3>
+                                        <p>Проект в разработке</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>   
+                </div>
+
+            </section>
+
+            <!-- About -->
+            <section id="about">
+                <h2>О нас</h2>
+                <p>
+                    Мы – сообщество эко и ИТ специалистов, чья цель – внедрение современных методов, в частности ИИ для экомониторинга.                     
+                </p>
+                <p>
+                    Миссия: методы ИИ для экомониторинга <br>
+                    Стратегия: внедрение методов ИИ, анализ данных популяций редких или угрожаемых видов
+                </p>
+                <p>
+                    Базовым проектом изначально был проект «Сохранение кудрявого и розового пеликанов», основанный на программе ЕАРАЗА при поддержке орнитологов Московского зоопарка. 
+                </p>
+                <img src="./assets/project-3-card.jpg"/>
+                <img src="./assets/about.jpg"/>
+            </section>
+
+            <!-- Team -->
+            <section id="team">
+                <h2>Команда</h2>
+                <div class="team-wrap">
+                    <div class="team-big-row">
+                        <div class="team-card-big">
+                            <img src="./assets/roman-anoshin.jpg">
+                            <div class="card-info">
+                                <h5>Роман Аношин</h5>
+                                <p>Ученый секретарь ГАУ “Московский зоопарк”, кандидат биологических наук.</p>
+                                <p>Инициатор и координатор природоохранной программы ЕАРАЗА "Сохранение кудрявого и розового пеликанов".</p>    
+                            </div>
+                        </div>
+                        <div class="team-card-big">
+                            <img src="./assets/alexander-kuzovenko.jpg">
+                            <div class="card-info">
+                                <h5>Александр Кузовенко</h5>
+                                <p>Заместитель директора по развитию и научно-просветительской работе ГБУ "Самарский зоопарк", кандидат биологических наук.</p>
+                                <p>Участник природоохранной программы ЕАРАЗА "Сохранение кудрявого и розового пеликанов".</p>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card-small">
+                        <img src="./assets/dmitry-anoshin.png">
+                        <div class="card-info">
+                            <h5>Дмитрий Аношин</h5>
+                            <p>Инициатор и координатор проекта, консультант по инженерному анализу данных</p>    
+                        </div>
+                    </div>
+                    <div class="team-card-small">
+                        <img src="./assets/vladimir-valeev.png">
+                        <div class="card-info">
+                            <h5>Владимир Валеев</h5>
+                            <p>Data Science Team Lead</p>    
+                        </div>
+                    </div>
+                    <div class="team-card-small">
+                        <img src="./assets/olga-rudakova.png">
+                        <div class="card-info">
+                            <h5>Ольга Рудакова</h5>
+                            <p>Data Scientist</p>    
+                        </div>
+                    </div>
+                    <div class="team-card-small">
+                        <img src="./assets/vsevolod-kozlov.png">
+                        <div class="card-info">
+                            <h5>Всеволод Козлов</h5>
+                            <p>ML Engineer</p>    
+                        </div>
+                    </div>
+                    <div class="team-card-small">
+                        <img src="./assets/anna-shiyan.png">
+                        <div class="card-info">
+                            <h5>Анна Шиян</h5>
+                            <p>Research scientist</p>    
+                        </div>
+                    </div>
+                    <div class="team-card-small">
+                        <img src="./assets/ekaterina-sovetkina.png">
+                        <div class="card-info">
+                            <h5>Екатерина Советкина</h5>
+                            <p>DWH analyst</p>    
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Publications -->
+            <!-- <section id="publications">
+                <h2>Публикации</h2>
+            </section> -->
+
+            <!-- Footer -->
+
+            <footer>
+                <img src="./assets/footer-pic.JPG" />
+                <div class="footer-list">
+                    <ul class="nav-links">
+                        <a href="#about">О нас</a>
+                        <a href="#team">Команда</a>
+                        <a href="#projects">Наши проекты</a>
+                        <a href="mailto:support@skyfly.com">Связаться</a>
+                        <!-- <a href="#team">Eng</a> -->
+                    </ul>
+
+                </div>
+            </footer>
+        </main>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+        <!-- JS modal menu -->
+        <script>
+            function toggleMenu() {
+                var menuModal = document.getElementById('menuModal');
+                menuModal.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
+                var nav = document.getElementById('nav')
+                nav.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
+            }
+        </script>
+
+    </body>
+
+</html>

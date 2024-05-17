@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- General -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Lala J - Design system case study</title>
+        <meta name="description" content="Seasoned product designer with a focus on design systems and mobile apps development.">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/favicon.png">
+
+        <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">  
+
+        <!-- CSS CDN -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- CSS custom -->
+
+        <link rel="stylesheet" href="../index.css">
+        
+        <!-- Google fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S2EMV79B3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3S2EMV79B3');
+        </script>
+    </head>
+
+    <body>
+
+        <header>
+
+            <!-- Navigation bar -->
+
+            <nav id="nav">
+                <a href='/'>
+                    <h5 class="logo">Lala Jafarova</h5>
+                </a>
+
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <iconify-icon icon="iconamoon:menu-burger-horizontal-light" style="color: #fff;" width="36" height="36"></iconify-icon>
+                </div>
+
+                <ul class="nav-links">
+                    <a href="../about.html">About</a>
+                    <a href="https://drive.google.com/file/d/1_OM01ezWFgmlRtK1zUI_VgtONU3uyF7O/view?usp=sharing" target="_blank">Resume</a>
+                    <a href="https://www.linkedin.com/in/lala-jafarova/">Linkedin</a>
+                    <a href="mailto:la.jafarova@gmail.com">la.jafarova@gmail.com</a>
+                </ul>
+            </nav>
+            <!-- Menu mobile -->
+            <div class="menu-modal" id="menuModal">
+                <div class="menu-content">
+                    <div class="close-modal" onclick="toggleMenu()">
+                    <iconify-icon icon="material-symbols-light:close"></iconify-icon>
+                    </div>
+                    <a href="../about.html">About</a>
+                    <a href="https://drive.google.com/file/d/1_OM01ezWFgmlRtK1zUI_VgtONU3uyF7O/view?usp=sharing" target="_blank">Resume</a>
+                    <a href="https://www.linkedin.com/in/lala-jafarova/">Linkedin</a>
+                    <a href="mailto:la.jafarova@gmail.com">la.jafarova@gmail.com</a>    
+                </div>
+            </div> 
+
+        </header>
+
+        <main>
+            <!-- Hero -->
+            <section class="ds-hero">
+                <h3>Building a 1-0 Design System for Turbo mobile application</h3>
+                <h4>A messed up design process with chaos in design files and no documentation was a major issue for design and dev teams, resulting in a massive project backlog.</h4>
+                <div class="ds-grid">
+                    <div class="ds-grid-left">
+                        <p class="white">Team</p>
+                        <p>Design systems designer (me), Design Team Lead, Mobile Developer</p>
+                    </div>
+                    <div class="ds-grid-right">
+                        <p class="white">Deliverables</p>
+                        <p>Informational Architecture, Design specs, Style guide, Component library</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section kpi -->
+            <section>
+                <h4>Key Performance Indicators</h4>
+                    <div class="ds-table-row">
+                        <div class="ds-grid">
+                            <div class="ds-grid-left">
+                                <h3 class="numbers">40%</h3>
+                            </div>
+                            <div class="ds-grid-right">
+                                <p class="white no-margin">Operational time reduction for the design team due to convenient and fast prototyping</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="ds-table-row">
+                        <div class="ds-grid">
+                            <div class="ds-grid-left">
+                                <h3 class="numbers"><span class="strikethrough">70</span> 20</h3>
+                            </div>
+                            <div class="ds-grid-right">
+                               <p class="white no-margin">Colors in Light mode palette, organized logically and hierarchically</p> 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="ds-table-row">
+                        <div class="ds-grid">
+                            <div class="ds-grid-left">
+                                <h3 class="numbers">ALL</h3>
+                            </div>
+                            <div class="ds-grid-right">
+                                <p class="white no-margin">Components in code have been unified without affecting the content hierarchy and visual identity of the product</p>
+                            </div>    
+                        </div>
+                    </div>
+            </section>
+            <!-- section why -->
+            <section>
+                <h4>Why are we doing this?</h4>
+                <div class="ds-grid">
+                    <div class="ds-grid-left">
+                        <p class="white">Optimize design workflow</p>
+                        <p>Our design software couldn’t cope with the new challenges; no design artifacts or practices were documented in the files.<br> We had to reproduce many scenarios because the original screens were missed. Extra time was spent updating every iteration or mistake in Sketch, Zeplin and Basecamp.</p>
+                    </div>
+                    <div class="ds-grid-right gap">
+                        <div>
+                            <p class="white">Speed up development process</p>
+                            <p>Chaos in design files was reflected in code as well. Development team often returned handoff materials due to mechanical mistakes and flaws in the screens, and lack of comments and guidance.</p>
+                        </div>
+                        <div>
+                            <p class="white">Focus on strategical and complex projects</p>
+                            <p>The operational overload prevented the team from moving further and scaling the business. We risked losing competitive advantages in the market.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section research -->
+            <section>
+                <h4>Highlights of my research</h4>
+                <div class="ds-grid">
+                    <div class="ds-grid-left">
+                        <div class="gap">
+                            <div class="ds-card">
+                                <h2>202 tickets* were delayed or backlogged due to design assets inaccuracy and chaos in code.</h2>
+                                <p class="a-right">*over the 2021 year</p>
+                            </div>
+                            <div class="ds-card">
+                                <h2 class="gray">Design assets were scattered amongst Google Workspace, Zeplin, Sketch and Basecamp.</h2>
+                                <p class="white">It took twice as long to find references and up-to-date versions; lucky if there were any.</p>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="ds-grid-right">
+                        <div class="ds-card full-height">
+                            <p>quote - user interviews</p>
+                            <h2>“We have 70 colours in the code, and most look the same.<br>
+                                Many components with the same logic are designed and coded differently. We don’t know what UI elements we have in the product. <br>
+                                This mess is slowing us down.”</h2>
+                            <p class="a-right italic">- Anton, Mobile Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section HMW -->
+            <section class="hmw-section">
+                <h1> How might we reduce development delays, accelerate design-to-development and simplify the process of implementing changes?</h1>
+            </section>
+            <!-- section make it happen -->
+            <section>
+                <h4>Making it happen</h4>
+                <div class="ds-bento-grid">
+                    <div class="ds-card ds-layout i-one">
+                        <h5>Design assets restoration and migration to Figma</h5>
+                        <p>Figma had all the opportunities to store and organize design assets and artifacts with convenient access for the dev, design and product teams. I restored and migrated everything from Sketch and Zeplin to Figma, saving designers hours of searching.</p>
+                    </div>
+                    <div class="ds-card ds-layout i-two">
+                        <h5>Style guide</h5>
+                        <p>I identified patterns and organized colours, typography, grids and icons into a style kit. With the linked figma styles, we could quickly manage UI elements and finally had clean and easy-to-navigate files.</p>
+                    </div>
+                    <div class="i-three purple-bg">
+                        <img class="ds-img" alt="Design system mock" src="../assets/ds-preview-2.svg">
+                    </div>
+                    <img class="ds-img-small i-four" alt="Design system training for design team" src="../assets/ds-present.png">
+                    <div class="ds-card ds-layout i-five">
+                        <h5> Component library and design documentation</h5>
+                        <p>Using the atomic design principle, I created components with variations and organized a library in Figma. Each component has a specific name and path in the library related to use cases (complex templates) or material design terminology (simple atoms and molecules). I also added use cases into the description of every component.</p>
+                    </div>
+                    <div class="ds-card ds-layout i-six">
+                        <h5>Design system handoff, launch and adoption through team training</h5>
+                        <p>Successfully launched all components and updated the code base. It was necessary for the design team to learn how to use the component library effectively, so I conducted a number of trainings to accelerate the adoption process.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- section final -->
+            <section>
+                <h4>Final result</h4>
+                <div class="ds-card">
+                    <video width="100%" height="100%" controls autoplay>
+                        <source src="../assets/DS demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="v-caption">Fast and precise "lego type"  hi-fi prototype build-up using design system component library</p>
+                </div>
+            </section>
+            <!-- Footer -->
+
+            <footer>
+                <h1>I’m ready for a new <span class="gray">adventure</span> project.<br>
+                    Keen to collaborate?</h1>
+                <div class="footer-list">
+                    <div class="link-footer">
+                        <p>Get in touch</p>
+                        <a href="mailto:la.jafarova@gmail.com">la.jafarova@gmail.com</a>
+                    </div>
+                    <div class="link-footer">
+                        <p>Connect on Linkedin</p>
+                        <div class="connect-li">
+                            <a href="https://www.linkedin.com/in/lala-jafarova/">Lala Jafarova
+                                <iconify-icon icon="solar:arrow-left-up-linear" rotate="90deg"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </main>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+        <!-- JS modal menu -->
+        <script>
+            function toggleMenu() {
+                var menuModal = document.getElementById('menuModal');
+                menuModal.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
+                var nav = document.getElementById('nav')
+                nav.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
+            }
+        </script>
+
+    </body>
+
+</html>
