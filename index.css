@@ -35,8 +35,12 @@ section {
     padding: 0;
 }
 
-img {
+.hero img {
     width: 45%;
+}
+
+img {
+    width: 100%;
 }
 
 .projects {
@@ -245,8 +249,22 @@ li {
         z-index: 1;
         padding: 10px;
         height: min-content;
+    }
 
-}
+    .sticky-nav ul {
+        list-style: none;
+    }
+    .sticky-nav li {
+        margin: 0;
+        padding: 1em 1em 1em 0;
+        border-bottom: 1px solid #0026265c;
+        transition: padding 0.3s ease, background 0.3s ease;
+    }
+
+    .sticky-nav li:hover {
+        padding: 1em 0.5em 1em 0.5em;
+        background-color: #00262629;
+    }
 
 /*  Fonts */
 
