@@ -19,7 +19,10 @@ main {
     display: flex;
     flex-direction: column;
     align-self: center;
-    gap: 65px; 
+}
+
+footer {
+    margin-top: 8em;
 }
 
 section {
@@ -38,6 +41,23 @@ section {
 .hero img,
 .team-wrap img {
     width: 45%;
+    border-radius: 16px;
+}
+
+.abt-txt {
+    width: 60%;
+}
+
+.abt-img {
+    display: flex;
+    width: 100%;
+    gap: 24px;
+    padding-top: 1.9em;
+}
+
+.abt-img img {
+    width: 49%;
+    border-radius: 16px;
 }
 
 img {
@@ -68,10 +88,13 @@ img {
 .project-card {
     display: flex;
     flex-direction: column;
-    width: 68%;
+    /* width: 68%; */
     align-items: flex-start;
     gap: 16px;
     background: #F5F5F5;
+}
+.project-wrap a {
+    width: 68%;
 }
 
 .project-card-short {
@@ -230,18 +253,25 @@ li {
     margin: 1em 0;
 }
 
-@media screen and (min-width: 769px) {
-    .article-wrap {
+.article-wrap {
         display: flex;
         flex-direction: row;
         gap: 100px;
         max-width: 1200px;
     }
 
-    .article-container {
-        max-width: 768px;
-        width: 100vw;
-    }
+.article-container {
+    max-width: 768px;
+    width: 100vw;
+}
+
+.article-section {
+    padding-top: 80px;
+}
+
+.breadcrumbs{
+    margin-top: 24px;
+}
 
     .sticky-nav {
         display: block;
@@ -296,6 +326,7 @@ h1 {
 
 footer img {
     width: 100%;
+    border-radius: 16px;
 }
 
 section h1 {
@@ -413,10 +444,6 @@ p {
     font-weight: 400;
     line-height: 120%;
     align-self: stretch;
-}
-
-.description a{
-    border-bottom: 1px solid #002626;
 }
 
 .link-footer p, 
