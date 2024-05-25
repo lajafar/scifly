@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+         <!-- General -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SciFly - AI Environmental monitoring</title>
+        <meta name="description" content="Экомониторинг при помощи ИИ">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/favicon.png">
+
+        <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">  
+
+        <!-- CSS CDN -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- CSS custom -->
+
+        <link rel="stylesheet" href="index.css">
+
+        <!-- Google fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!-- Google tag (gtag.js) -->
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <!-- Navigation bar -->
+
+            <nav id="nav">
+                <a href="./home-eng.html">
+                    <h5 class="logo">SciFly</h5>
+                </a>
+
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <iconify-icon icon="iconamoon:menu-burger-horizontal-light" style="color: #fff;" width="36" height="36"></iconify-icon>
+                </div>
+
+                <ul class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#team">Team</a>
+                    <a href="#projects">Projects</a>
+                    <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
+                    <a class="language-link" href="/"><iconify-icon icon="iconoir:language"></iconify-icon>Ru</a>
+                </ul>
+
+            </nav>
+
+            <!-- Menu mobile -->
+            <div class="menu-modal" id="menuModal">
+                <div class="menu-content">
+                    <div class="close-modal" onclick="toggleMenu()">
+                    <iconify-icon icon="material-symbols-light:close"></iconify-icon>
+                    </div>
+                    <a href="#about">About</a>
+                    <a href="#team">Team</a>
+                    <a href="#projects">Projects</a>
+                    <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
+                    <a class="language-link" href="/"><iconify-icon icon="iconoir:language"></iconify-icon>Ru</a>
+                </div>
+            </div> 
+        </header>
+
+        <main>
+            <!-- Hero -->
+
+            <section class="hero">
+                <h1>AI Environmental monitoring</h1>
+                <img src="./assets/hero-pic.JPG"/>
+            </section>
+
+            <!-- Projects -->
+
+            <section id="projects" class="projects">
+                <h2>Projects</h2>
+
+                <!-- Project 1 -->
+                <div class="project-wrap">
+                    <a href="./pelican-project-eng.html">
+                        <div class="project-card">
+                            <img class="preview" src="./assets/project-1-card.png"/>
+                            <div class="card-left-col">
+                                <div class="project-content">
+
+                                    <div class="description">
+                                        <h3>Conservation of Dalmatian and Pink Pelicans</h3>
+                                        <div class="tags">
+                                            <div class="tag">
+                                                <p>ML pipeline</p>
+                                            </div>
+                                            <div class="tag">
+                                                <p>Computer vision</p>
+                                            </div>
+                                            <div class="tag">
+                                                <p>Cloud technologies</p>
+                                            </div>
+                                        </div>
+                                        <p>The Dalmatian and Pink Pelican Conservation is a program that studies and protects rare birds in the wild. To preserve the Russian pelican population, scientists need to monitor and estimate the number of birds, their movements, and the well-being of nesting colonies. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </a>
+
+                    <div class="project-card-col">
+                        <div class="project-card-short">
+                            <img class="preview" src="./assets/project-2-card.JPG"/>
+                            <div class="card-left-col">
+                                <div class="project-content">
+                                    <div class="description-short">
+                                        <h3>Monitoring Australian pelican colonies</h3>
+                                        <p>Project in development</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card-short">
+                            <img class="preview" src="./assets/project-3-card.jpg"/>
+                            <div class="card-left-col">
+                                <div class="project-content">
+                                    <div class="description-short">
+                                        <h3>Saiga monitoring</h3>
+                                        <p>Project in development</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>   
+                </div>
+
+            </section>
+
+            <!-- About -->
+            <section id="about">
+                <h2>About</h2>
+                <div class="abt-txt">
+                    <p>
+                        We are a community of environmental and IT specialists whose goal is to introduce modern methods, particularly AI, for environmental monitoring.
+                    </p>
+                    <p>
+                        Mission: AI methods for environmental monitoring <br>
+                        Strategy: implementation of AI methods and analysis of data from populations of rare or dangerous species.
+                    </p>
+                    <p>
+                        The basic project was initially the “Conservation of Dalmatian and Pink Pelicans,” based on the EARAZA program and supported by ornithologists from the Moscow Zoo.
+                    </p>    
+                </div>
+                <div class="abt-img">
+                    <img src="./assets/project-3-card.jpg"/>
+                    <img src="./assets/about.jpg"/>    
+                </div>
+            </section>
+
+            <!-- Team -->
+            <section id="team">
+                <h2>Team</h2>
+                <div class="team-wrap">
+                    <div class="team-big-row">
+                        <div class="team-card-big">
+                            <img src="./assets/roman-anoshin.jpg">
+                            <div class="card-info">
+                                <h5>Roman Anoshin</h5>
+                                <p>Scientific Secretary of the State Autonomous Institution “Moscow Zoo,” Candidate of Biological Sciences.</p>
+                                <p>Initiator and coordinator of the EARAZA environmental program "Conservation of Dalmatian and Pink Pelicans."</p>
+                            </div>
+                        </div>
+                        <div class="team-card-big">
+                            <img src="./assets/alexander-kuzovenko.jpg">
+                            <div class="card-info">
+                                <h5>Alexander Kuzovenko</h5>
+                                <p>Deputy Director for Development and Scientific and Educational Work, State Budgetary Institution "Samara Zoo," Candidate of Biological Sciences.</p>
+                                <p>Participant of the EARAZA environmental program "Conservation of Dalmatian and Pink Pelicans."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-card-small">
+                        <img src="./assets/dmitry-anoshin.png">
+                        <div class="card-info">
+                            <h5>Dmitry Anoshin</h5>
+                            <p>Project initiator and coordinator, data engineering consultant</p>    
+                        </div>
+                    </div>
+                    <div class="team-card-small">
+                        <img src="./assets/vladimir-valeev.png">
+                        <div class="card-info">
+                            <h5>Vladimir Valeev</h5>
+                            <p>Data Science Team Lead</p>    
+                        </div>
+                    </div>
+                    <div class="team-card-small">
+                        <img src="./assets/olga-rudakova.png">
+                        <div class="card-info">
+                            <h5>Olga Rudakova</h5>
+                            <p>Data Scientist</p>    
+                        </div>
+                    </div>
+                    <div class="team-card-small">
+                        <img src="./assets/vsevolod-kozlov.png">
+                        <div class="card-info">
+                            <h5>Vsevolod Kozlov</h5>
+                            <p>ML Engineer</p>    
+                        </div>
+                    </div>
+                        <div class="team-card-small">
+                            <img src="./assets/anna-shiyan.png">
+                            <div class="card-info">
+                                <h5>Anna Shiyan</h5>
+                                <p>Research scientist</p>    
+                            </div>
+                        </div>
+                        <div class="team-card-small">
+                            <img src="./assets/ekaterina-sovetkina.png">
+                            <div class="card-info">
+                                <h5>Ekaterina Sovetkina</h5>
+                                <p>DWH analyst</p>    
+                            </div>
+                        </div>
+                        <div style="width: 22%;">
+                        </div>
+                        <div style="width: 22%;"></div>
+                </div>
+            </section>
+
+            <!-- Publications -->
+            <!-- <section id="publications">
+                <h2>Публикации</h2>
+            </section> -->
+
+            <!-- Footer -->
+
+            <footer>
+                <img src="./assets/footer-pic.jpg" />
+                <div class="footer-list">
+                    <ul class="nav-links">
+                        <a href="#about">About</a>
+                        <a href="#team">Team</a>
+                        <a href="#projects">Projects</a>
+                        <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
+                        <!-- <a href="#team">Eng</a> -->
+                    </ul>
+
+                </div>
+            </footer>
+        </main>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+        <!-- JS modal menu -->
+        <script>
+            function toggleMenu() {
+                var menuModal = document.getElementById('menuModal');
+                menuModal.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
+                var nav = document.getElementById('nav')
+                nav.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
+            }
+        </script>
+
+    </body>
+
+</html>

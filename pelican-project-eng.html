@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+         <!-- General -->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>SciFly - AI Environmental monitoring</title>
+        <meta name="description" content="Экомониторинг при помощи ИИ">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/favicon.png">
+
+        <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">  
+
+        <!-- CSS CDN -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- CSS custom -->
+
+        <link rel="stylesheet" href="index.css">
+
+        <!-- Google fonts -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet">
+        
+        <!-- Google tag (gtag.js) -->
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <!-- Navigation bar -->
+
+            <nav id="nav">
+                <a href="/">
+                    <h5 class="logo">SciFly</h5>
+                </a>
+
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <iconify-icon icon="iconamoon:menu-burger-horizontal-light" style="color: #fff;" width="36" height="36"></iconify-icon>
+                </div>
+
+                <ul class="nav-links">
+                    <a href="home-eng.html">About</a>
+                    <a href="home-eng.html#team">Team</a>
+                    <a href="home-eng.html#projects">Projects</a>
+                    <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
+                    <a class="language-link" href="./pelican-project.html"><iconify-icon icon="iconoir:language"></iconify-icon>Ru</a>
+                </ul>
+
+            </nav>
+
+            <!-- Menu mobile -->
+            <div class="menu-modal" id="menuModal">
+                <div class="menu-content">
+                    <div class="close-modal" onclick="toggleMenu()">
+                    <iconify-icon icon="material-symbols-light:close"></iconify-icon>
+                    </div>
+                    <a href="#about">About</a>
+                    <a href="#team">Team</a>
+                    <a href="#projects">Projects</a>
+                    <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
+                    <a class="language-link" href="./pelican-project.html"><iconify-icon icon="iconoir:language"></iconify-icon>Ru</a>
+                </div>
+            </div> 
+        </header>
+
+        <main>
+            <!-- Hero -->
+
+            <section class="hero">
+                <div>
+                    <h1>Conservation of Dalmatian and Pink Pelicans</h1>
+                </div>
+                <img src="./assets/hero-pic.JPG"/>
+            </section>
+
+            <!-- Article -->
+            <div class="article-wrap">
+
+                <div class="article-container">
+                    <div id="section-1" class="article-section">
+                        <h2>About the project</h2>
+                        <p>
+                            Goal: organizing population monitoring of Dalmatian and Pink Pelican colonies OR optimizing population estimates<br>
+                            Tasks: …<br><br>
+                            
+                            Dalmatian and Pink Pelican Conservation is a program that studies and protects rare birds in the wild. To preserve the Russian pelican population, especially that part that lives outside reserves, scientists need to monitor and estimate the number of birds, their movements, and the well-being of nesting colonies.<br><br>
+                            
+                            Pelicans living in Russia, curly and pink, are at risk; the observed decline in the level of well-being of their populations is due to climatic and anthropogenic factors. In this case, pelicans are considered as indicator species.  <br><br>
+                            
+                            To preserve pelicans, scientists need to conduct constant monitoring.<br><br>
+                            
+                            One of the program's objectives is to monitor breeding colonies, feeding and seasonal aggregations of Dalmatian and pink pelicans, especially outside reserves. In the Ciscaucasia, birds mainly live in artificial reservoirs - man-made lakes and ponds.<br><br>
+                            
+                            Problem: existing (manual) methods for estimating headcount are labour-intensive and do not give accurate results.<br><br>
+                            
+                            Until recently, pelicans were counted manually - it took a week, and the estimate was approximate.  <br><br>
+                            The number of birds was determined by the “pin method.” To do this, they took an aerial photograph, for example, from a quadcopter and marked each bird in the frame with a pin. <br><br>
+                            The pin method is complex and labour-intensive, only providing approximate data. The last time the birds were counted seven times, each time a new result was obtained. It’s scary to talk about the time required: counting 2100–2200 individuals took a week.
+                         </p>
+                    </div>    
+                    
+                    <div id="section-2" class="article-section">                    
+                        <h2>Project realization plan</h2>
+                        
+                        <ol>
+                            <li>Collect primary data for analysis</li>
+                            <li>Systematize and place the data</li>
+                            <li>Mark up the data</li>
+                            <li>Train the model in the cloud</li>           
+                        </ol>    
+                    </div>
+                    
+                    <div id="section-3" class="article-section">
+                    
+                        <h2>Methodology</h2>
+                        
+                        <p>
+                            Estimating the population size of pelicans by ornithologists is the most time-consuming and monotonous task, so we focused on automating this part of the ornithologists’ work and used computer vision. Computer vision (CV) is a field of artificial intelligence that uses neural networks to solve problems, including detection and classification problems. In other words, the trained model can localize an object and assign it a class (label) - an adult or a chick, in our case.<br><br>
+                             The introduction of computer vision technologies allows you to quickly obtain the data necessary to assess the situation by processing source materials according to their number and distribution.  <br><br>
+                             Data collection<br>
+                             In 2020, regular data collection on these colonies began; during this time, we could collect and create an archive for each year of observation.
+                        </p>
+                        <figure>
+                            <img src="./assets/pel-pic1.JPG" alt="Fig 1 Example of primary data obtained from a quadcopter (2021)">
+                            <figcaption>Fig 1 Example of primary data obtained from a quadcopter (2021)</figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="./assets/pel-pic2.jpg" alt="Fig 2 Example of primary data obtained from a quadcopter (2023)">
+                            <figcaption>Fig 2 Example of primary data obtained from a quadcopter (2023)</figcaption>
+                        </figure>
+    
+                        <p>
+                            The technical implementation process for monitoring the number of pink and Dalmatian pelicans consists of three [four] stages: [building a pipeline], image processing and generating a data set on which the model will be trained, training the model, and developing a service, a wrapper for the model. The service allows you to access the model and receive predictions about the number of individuals and their location in the image (rendering bounding boxes).
+                        </p>   
+    
+                        <figure>
+                            <img src="./assets/pel-pic3.png" alt="Fig.3. An example of a marked image, where adults are marked with pink rectangles, chicks are marked with blue rectangles">
+                            <figcaption>Fig.3. An example of a marked image, where adults are marked with pink rectangles, chicks are marked with blue rectangles</figcaption>
+                        </figure>
+    
+                        <figure>
+                            <img src="./assets/pel-pic4.png" alt="Fig.4. A more detailed example of a labeled image">
+                            <figcaption>Fig.4. A more detailed example of a labeled image</figcaption>
+                        </figure>
+                        <p>
+                            Data markup <br>
+                            Data marking is a long, labour-intensive process in which a specialist manually marks adult pelicans and chicks in photos, giving them certain marks. Marking is done on the CVAT service. Figures 3 and 4 present examples of labelled images.
+                        </p>
+    
+                        <p>
+                            Cloud technologies: ML-pipeline<br>
+                            Stage 1
+                        </p>
+                        <ul>
+                            <li>
+                                The simplest data organization
+                            </li>
+                            <li>
+                                Markup in a shared service
+                            </li>
+                            <li>
+                                Datasets on the competition platform
+                            </li>
+                            <li>
+                                Training on the competition platform
+                            </li>
+                            <li>
+                                Model predictions immediately after training
+                            </li>
+                            <li>
+                                Need for Model Deployment
+                            </li>
+                        </ul>
+    
+                        <p>
+                            Stage 2
+                        </p>
+                        <ul>
+                            <li>
+                                Data collected by year in VK object storage
+                            </li>
+                            <li>
+                                Markup in your own service also in the VK cloud
+                            </li>
+                            <li>
+                                Datasets are generated by the ML pipeline before training from object storage and CVAT                            
+                            </li>
+                            <li>
+                                Training on the VK platform                            
+                            </li>
+                            <li>
+                                Deploying a model into a service on a virtual machine (also VK)                            
+                            </li>
+                            <li>
+                                Interaction with the service through a Telegram bot                            
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="section-4" class="article-section">                    
+                        <h2>Results</h2>
+    
+                        <p>
+                            More data has been collected (late summer 2023)<br>
+                            The data is systematized and placed in S3 storage<br>
+                            Repository (more updates after new data is collected)<br>
+                            The CVAT data tagging service has been upgraded - the tagging is now synchronized with the repository on GitHub <br>
+                            The previous YOLOv5 model is wrapped in a nuclio serverless module for semi-automatic marking in CVAT <br>
+                            Telegram bot and inference module for it <br>
+                            Pipeline for training on the cloud - three stages: loading data, creating a dataset, training the model<br>
+                            Experiments with YOLOv7 and domain adaptation, the transition from a sliding window to full-frame inference (4K resolution)<br>
+                            Forming a community around the pelican problem (+3 people per team)<br>
+                        </p>    
+                    </div>                    
+                    
+                    <div id="section-5" class="article-section">
+                        <h2>Development prospects</h2>
+
+                        <p>
+                            We continue to work on the automation of pelican monitoring. There are plans to improve the model by moving to a new version of YOLOv7 or YOLOv8 and introducing model acceleration techniques for video processing. 
+                            In addition, it is very important to improve the recognition quality by training the model on current images taken strictly from above and images where pelicans are shot from other angles, for example, at an angle.
+                            We expect that:<br>
+                            the model will work acceptably quickly on video;<br>
+                            The model will give an acceptable and complete result for new images.<br><br>
+                           
+                            We also continue to develop a community around problems of the state of biological species in Russia and abroad, in particular, pelicans.<br><br>
+                           
+                            The service we are creating in the cloud is important for ornithologists and has a global goal. In this case, the pelican is an indicator species, allowing one to judge environmental changes by their behaviour.  <br>
+                            By tracking the condition of colonies, we will be able to assess the environmental situation and predict climate change more accurately.
+                        </p>
+                    </div>
+
+                    <div id="section-6" class="article-section">
+                        <h2>Publications</h2>
+                        <ol>
+                            <li>
+                                Anoshin R.M., Skuratov N.I. Pink and Dalmatian pelicans: materials on breeding in captivity (Moscow Zoo)
+                                and biology in nature (Lake Manych) // Problems of zooculture and ecology. Vol. 3. Collection of scientific works - M.: State Autonomous Institution “Moscow Zoo”; EARAZA; SOZAR: Ed. “ZooVetKniga, 2019. pp. 14-31.
+                            </li>
+                            <li>
+                                Anoshin R.M. Ostapenko V.A. Pelicans: about the expanded program of the Moscow Zoo // Ornithological
+                                research in the countries of Northern Eurasia: abstracts of the XV International. ornithologist. conf. Northern Eurasia, - Minsk:
+                                Belarusian Science, 2020. pp. 42-43.                        
+                            </li>
+                            <li>
+                                Anoshin R.M., Rozhkov P.S. Pelicans of the Ciscaucasia: field notes in relation to the implementation of the program
+                                EARAZA: “Preservation of Dalmatian and Pink Pelicans” //Problems of zooculture and ecology. Vol. 4//Collection of scientific
+                                works – M.: State Autonomous Institution “Moscow Zoo”; EARAZA: Ed. "ZooVetKniga", 2020 p. 13-31.
+                            </li>
+                            <li>
+                                Anoshin R.M. Pelicans of Manych: about the factors influencing their well-being Current issues of zoology and ecology
+                                and nature conservation. Issue 3 // Materials of the third International Scientific and Practical Conference dedicated to
+                                World Earth Day and the beginning of the Decade for Ecosystem Restoration. April 22, 2021. – M.: LLC NPO
+                                "Agricultural Technologies", 2021. pp. 19-23.
+                            </li>
+                            <li>
+                                Anoshin R.M., Gugueva E.V., Belik V.P., Badmaev V.E., Osinskaya V.A., Rozhkov P.S. Pelicans of Volgograd and
+                                Kalmyk Sarpa: some data on distribution and abundance in 2021. Problems of zoo culture and ecology.
+                                Vol. 5 // Collection of scientific works - M.: State Autonomous Institution “Moscow Zoo”, EARAZA; SOZAR: Ed. LLC Printing House
+                                offset printing", 2021. pp. 110-119.
+                            </li>
+                            <li>
+                                Gugueva E.V., Anoshin R.M., Belik V.P., Badmaev V.E., Osinskaya V.A. Dalmatian and pink pelicans nesting on
+                                Reservoirs of the Sarpinskaya lowland in the Volgograd region. Problems of zoo culture and ecology. Vol. 5 // Collection
+                                scientific works - M.: State Autonomous Institution "Moscow Zoo", EARAZA; SOZAR: Ed. LLC "Offset Printing House", 2021. P.
+                                134-140.
+                            </li>
+                            <li>
+                                Anoshin R.M. EARAZA environmental program “Conservation of Dalmatian and Pink Pelicans”, prerequisites
+                                creation, progress and some results // Scientific research and environmental education in zoos. Mat-
+                                ly scientific and practical conf, dedicated 95th anniversary of the Rostov-on-Don Zoo. Rostov-on-Don: Southern Publishing House,
+                                2022. pp. 5-9.
+                            </li>
+                            <li>
+                                Anoshin R.M., Valeev V.V., Rudakova O.N. On the feasibility and modern methods of estimating the number of curly
+                                and pink pelicans. Problems of zoo culture and ecology. Vol. 6 // Collection of scientific works - M.: State Autonomous Institution "Moscow
+                                Zoo", EARAZA; SOZAR: Ed. LLC "Offset Printing House", 2022. pp. 124-133.
+                            </li>
+                            <li>
+                                Anoshin R.M. About the EARAZA program “Conservation of Dalmatian and Pink Pelicans” Current conservation issues
+                                birds of Russia. Materials of the All-Russian scientific and practical conference dedicated to the 30th anniversary of SOPR (Moscow, 11-
+                                February 12, 2023) / Rep. ed. V.N. Melnikov. Moscow-Makhachkala, 2023. pp. 21-26.
+                            </li>
+                            <li>
+                                Anoshin R.M. Information on the current status of the pink pelican (Pelecanus onocrotalus) population in the region
+                                Manycha. Problems of zoo culture and ecology. Vol. 7. Collection of scientific works / S.V. Akulova, V.A. Ostapenko – ed. –
+                                M.: State Autonomous Institution “Moscow Zoo”; EARAZA; SOZAR: 2024. pp. 103-112.
+                            </li>
+                            <li>
+                                Anoshin R.M., Gugueva E.V. Transformation of the territories of the south of the European part of Russia and its impact on the number and
+                                Distribution of Dalmatian and Pink Pelicans Ivanovo
+                                Links to some publications on the implementation of the program (EARAZA website) from those listed above:<br><br>
+                                <a href="https://earaza.ru/?p=4414">1. EARESA Program "Conservation of Dalmatian and Pink Pelicans"</a><br><br>
+                               
+                                <a href="https://earaza.ru/wp-content/uploads/digest-n3.pdf">2. Anoshin R.M., Skuratov N.I. Pink and Dalmatian pelicans: materials on breeding in captivity (Moscow Zoo)
+                                    and biology in nature (Lake Manych)//Problems of zooculture and ecology. Vol. 3.</a><br><br> 
+                               
+                                <a href="https://earaza.ru/wp-content/uploads/20210218_ZooculturesAndEcologyProblems_4.pdf">3. Anoshin R.M., Rozhkov P.S. Pelicans of the Ciscaucasia: field notes in relation to the implementation of the program
+                                    EARAZA: “Preservation of Dalmatian and Pink Pelicans” //Problems of zooculture and ecology. Vol. 4//
+                                </a> <br><br>
+                                <a href="https://earaza.ru/wp-content/uploads/Zooculture ProblemsNo5.pdf">4. Anoshin R.M., Gugueva E.V., Belik V.P., Badmaev V.E., Osinskaya V.A., Rozhkov P.S. Pelicans of Volgograd and
+                                    Kalmyk Sarpa: some data on distribution and abundance in 2021;
+                                    Gugueva E.V., Anoshin R.M., Belik V.P., Badmaev V.E., Osinskaya V.A. Dalmatian and pink pelicans nesting on
+                                    Reservoirs of the Sarpinskaya lowland in the Volgograd region. Problems of zoo culture and ecology. Vol. 5//</a><br><br>
+                                <a href="https://earaza.ru/wp-content/uploads/Zoo_sb_6_z_eco_screen_148x210_22122022.pdf">5. Anoshin R.M., Valeev V.V., Rudakova O.N. On the feasibility and modern methods of estimating the number of curly
+                                    and pink pelicans. Problems of zoo culture and ecology. Vol. 6</a><br><br>
+                                <a href="https://earaza.ru/wp-content/uploads/20210505_zoo_eco_issues.pdf">6. Anoshin R.M. Pelicans of Manych: about the factors influencing their well-being Current issues of zoology and ecology
+                                    and nature conservation. Issue 3</a><br><br>
+                                <a href="https://cloud.mail.ru/stock/nn4LaBghPPkcKWume2cKwPGK">7. Anoshin R.M. Information on the current status of the pink pelican (Pelecanus onocrotalus) population in the region
+                                    Manycha. Problems of zoo culture and ecology. Vol. 7</a>
+                            </li>
+                        </ol>
+                    </div>    
+                </div>
+      
+                <div class="sticky-nav">   
+                  <ul>
+    
+                    <a href="#section-1">
+                      <li>About the project</li>
+                    </a>
+    
+                    <a href="#section-2">
+                      <li>Project realization plan</li>
+                    </a>
+    
+                    <a href="#section-3">
+                      <li>Methodology</li>
+                    </a>
+    
+                    <a href="#section-4">
+                      <li>Results</li>
+                    </a>
+    
+                    <a href="#section-5">
+                      <li>Development perspectives</li>
+                    </a>
+    
+                    <a href="#section-6">
+                      <li>Publications</li>
+                    </a>
+                    
+                  </ul>
+    
+                </div>
+    
+              </div>
+
+            <!-- Footer -->
+
+            <footer>
+                <img src="./assets/footer-pic.jpg" />
+                <div class="footer-list">
+                    <ul class="nav-links">
+                        <a href="#about">О нас</a>
+                        <a href="#team">Команда</a>
+                        <a href="#projects">Наши проекты</a>
+                        <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
+                        <!-- <a href="#team">Eng</a> -->
+                    </ul>
+
+                </div>
+            </footer>
+        </main>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
+        <!-- JS modal menu -->
+        <script>
+            function toggleMenu() {
+                var menuModal = document.getElementById('menuModal');
+                menuModal.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
+                var nav = document.getElementById('nav')
+                nav.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
+            }
+        </script>
+
+    </body>
+
+</html>
