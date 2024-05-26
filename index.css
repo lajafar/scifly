@@ -281,6 +281,8 @@ li {
 
     .sticky-nav ul {
         list-style: none;
+        padding-left: 0;
+        margin: 0;
     }
     .sticky-nav li {
         margin: 0;
@@ -353,6 +355,11 @@ h4 {
     line-height: normal;
     margin: 1em 0;
     max-width: 85%;
+}
+
+h5 {
+    font-size: 1.15rem;
+    font-weight: 600;
 }
 
 p {
@@ -634,8 +641,4 @@ a:hover{
         margin-top: 0;
     }
 
-    .sticky-nav ul {
-        padding-left: 0;
-        margin: 0;
-    }
 }
