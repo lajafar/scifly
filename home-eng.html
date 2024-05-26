@@ -46,8 +46,9 @@
                     <h5 class="logo">SciFly</h5>
                 </a>
 
-                <div class="menu-icon" onclick="toggleMenu()">
-                    <iconify-icon icon="iconamoon:menu-burger-horizontal-light" style="color: #fff;" width="36" height="36"></iconify-icon>
+                <div class="menu-mobile">
+                    <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
+                    <a class="language-link" href="/"><iconify-icon icon="iconoir:language"></iconify-icon>Ru</a>
                 </div>
 
                 <ul class="nav-links">
@@ -60,19 +61,6 @@
 
             </nav>
 
-            <!-- Menu mobile -->
-            <div class="menu-modal" id="menuModal">
-                <div class="menu-content">
-                    <div class="close-modal" onclick="toggleMenu()">
-                    <iconify-icon icon="material-symbols-light:close"></iconify-icon>
-                    </div>
-                    <a href="#about">About</a>
-                    <a href="#team">Team</a>
-                    <a href="#projects">Projects</a>
-                    <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
-                    <a class="language-link" href="/"><iconify-icon icon="iconoir:language"></iconify-icon>Ru</a>
-                </div>
-            </div> 
         </header>
 
         <main>
@@ -80,7 +68,7 @@
 
             <section class="hero">
                 <h1>AI Environmental monitoring</h1>
-                <img src="./assets/hero-pic.JPG"/>
+                <img src="./assets/hero-pic-2.JPG"/>
             </section>
 
             <!-- Projects -->
@@ -94,8 +82,6 @@
                         <div class="project-card">
                             <img class="preview" src="./assets/project-1-card.png"/>
                             <div class="card-left-col">
-                                <div class="project-content">
-
                                     <div class="description">
                                         <h3>Conservation of Dalmatian and Pink Pelicans</h3>
                                         <div class="tags">
@@ -111,7 +97,6 @@
                                         </div>
                                         <p>The Dalmatian and Pink Pelican Conservation is a program that studies and protects rare birds in the wild. To preserve the Russian pelican population, scientists need to monitor and estimate the number of birds, their movements, and the well-being of nesting colonies. </p>
                                     </div>
-                                </div>
                             </div>
                         </div> 
                     </a>
@@ -120,23 +105,19 @@
                         <div class="project-card-short">
                             <img class="preview" src="./assets/project-2-card.JPG"/>
                             <div class="card-left-col">
-                                <div class="project-content">
                                     <div class="description-short">
                                         <h3>Monitoring Australian pelican colonies</h3>
                                         <p>Project in development</p>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div class="project-card-short">
                             <img class="preview" src="./assets/project-3-card.jpg"/>
                             <div class="card-left-col">
-                                <div class="project-content">
                                     <div class="description-short">
                                         <h3>Saiga monitoring</h3>
                                         <p>Project in development</p>
                                     </div>
-                                </div>
                             </div>
                         </div>    
                     </div>   
@@ -160,7 +141,7 @@
                     </p>    
                 </div>
                 <div class="abt-img">
-                    <img src="./assets/project-3-card.jpg"/>
+                    <img src="./assets/about-2.jpg"/>
                     <img src="./assets/about.jpg"/>    
                 </div>
             </section>
@@ -244,29 +225,17 @@
 
             <footer>
                 <img src="./assets/footer-pic.jpg" />
-                <div class="footer-list">
-                    <ul class="nav-links">
-                        <a href="#about">About</a>
-                        <a href="#team">Team</a>
-                        <a href="#projects">Projects</a>
+                    <ul class="footer-list">
+                        <a href="#about">О нас</a>
+                        <a href="#team">Команда</a>
+                        <a href="#projects">Проекты</a>
                         <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
-                        <!-- <a href="#team">Eng</a> -->
                     </ul>
-
-                </div>
             </footer>
+
         </main>
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-        <!-- JS modal menu -->
-        <script>
-            function toggleMenu() {
-                var menuModal = document.getElementById('menuModal');
-                menuModal.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
-                var nav = document.getElementById('nav')
-                nav.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
-            }
-        </script>
 
     </body>
 

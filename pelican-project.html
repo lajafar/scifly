@@ -46,8 +46,9 @@
                     <h5 class="logo">SciFly</h5>
                 </a>
 
-                <div class="menu-icon" onclick="toggleMenu()">
-                    <iconify-icon icon="iconamoon:menu-burger-horizontal-light" style="color: #fff;" width="36" height="36"></iconify-icon>
+                <div class="menu-mobile">
+                    <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
+                    <a class="language-link" href="./home-eng.html"><iconify-icon icon="iconoir:language"></iconify-icon>Eng</a>
                 </div>
 
                 <ul class="nav-links">
@@ -60,19 +61,6 @@
 
             </nav>
 
-            <!-- Menu mobile -->
-            <div class="menu-modal" id="menuModal">
-                <div class="menu-content">
-                    <div class="close-modal" onclick="toggleMenu()">
-                    <iconify-icon icon="material-symbols-light:close"></iconify-icon>
-                    </div>
-                    <a href="#about">О нас</a>
-                    <a href="#team">Команда</a>
-                    <a href="#projects">Проекты</a>
-                    <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
-                    <a class="language-link" href="./pelican-project-eng.html"><iconify-icon icon="iconoir:language"></iconify-icon>Eng</a>
-                </div>
-            </div> 
         </header>
 
         <main>
@@ -360,33 +348,19 @@
               </div>
 
             <!-- Footer -->
-
+            
             <footer>
                 <img src="./assets/footer-pic.jpg" />
-                <div class="footer-list">
-                    <ul class="nav-links">
+                    <ul class="footer-list">
                         <a href="#about">О нас</a>
                         <a href="#team">Команда</a>
                         <a href="#projects">Проекты</a>
                         <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
-                        <!-- <a href="#team">Eng</a> -->
                     </ul>
-
-                </div>
             </footer>
+
         </main>
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
-        <!-- JS modal menu -->
-        <script>
-            function toggleMenu() {
-                var menuModal = document.getElementById('menuModal');
-                menuModal.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
-                var nav = document.getElementById('nav')
-                nav.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
-            }
-        </script>
-
     </body>
 
 </html>

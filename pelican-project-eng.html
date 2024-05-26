@@ -46,8 +46,9 @@
                     <h5 class="logo">SciFly</h5>
                 </a>
 
-                <div class="menu-icon" onclick="toggleMenu()">
-                    <iconify-icon icon="iconamoon:menu-burger-horizontal-light" style="color: #fff;" width="36" height="36"></iconify-icon>
+                <div class="menu-mobile">
+                    <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
+                    <a class="language-link" href="./pelican-project.html"><iconify-icon icon="iconoir:language"></iconify-icon>Ru</a>
                 </div>
 
                 <ul class="nav-links">
@@ -60,19 +61,6 @@
 
             </nav>
 
-            <!-- Menu mobile -->
-            <div class="menu-modal" id="menuModal">
-                <div class="menu-content">
-                    <div class="close-modal" onclick="toggleMenu()">
-                    <iconify-icon icon="material-symbols-light:close"></iconify-icon>
-                    </div>
-                    <a href="#about">About</a>
-                    <a href="#team">Team</a>
-                    <a href="#projects">Projects</a>
-                    <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
-                    <a class="language-link" href="./pelican-project.html"><iconify-icon icon="iconoir:language"></iconify-icon>Ru</a>
-                </div>
-            </div> 
         </header>
 
         <main>
@@ -92,8 +80,8 @@
                     <div id="section-1" class="article-section">
                         <h2>About the project</h2>
                         <p>
-                            Goal: organizing population monitoring of Dalmatian and Pink Pelican colonies OR optimizing population estimates<br>
-                            Tasks: …<br><br>
+                            <b>Goal:</b> organize population monitoring of Dalmatian and Pink Pelican colonies OR optimizing population estimates<br>
+                            <br><b>Tasks:</b> …<br><br>
                             
                             Dalmatian and Pink Pelican Conservation is a program that studies and protects rare birds in the wild. To preserve the Russian pelican population, especially that part that lives outside reserves, scientists need to monitor and estimate the number of birds, their movements, and the well-being of nesting colonies.<br><br>
                             
@@ -103,7 +91,7 @@
                             
                             One of the program's objectives is to monitor breeding colonies, feeding and seasonal aggregations of Dalmatian and pink pelicans, especially outside reserves. In the Ciscaucasia, birds mainly live in artificial reservoirs - man-made lakes and ponds.<br><br>
                             
-                            Problem: existing (manual) methods for estimating headcount are labour-intensive and do not give accurate results.<br><br>
+                            <b>Problem:</b> existing (manual) methods for estimating headcount are labour-intensive and do not give accurate results.<br><br>
                             
                             Until recently, pelicans were counted manually - it took a week, and the estimate was approximate.  <br><br>
                             The number of birds was determined by the “pin method.” To do this, they took an aerial photograph, for example, from a quadcopter and marked each bird in the frame with a pin. <br><br>
@@ -156,12 +144,12 @@
                             <figcaption>Fig.4. A more detailed example of a labeled image</figcaption>
                         </figure>
                         <p>
-                            Data markup <br>
-                            Data marking is a long, labour-intensive process in which a specialist manually marks adult pelicans and chicks in photos, giving them certain marks. Marking is done on the CVAT service. Figures 3 and 4 present examples of labelled images.
+                            <br><b>Data markup</b> <br><br>
+                            Data markup is a long, labour-intensive process in which a specialist manually marks adult pelicans and chicks in photos, giving them certain marks. Marking is done on the CVAT service. Figures 3 and 4 present examples of labelled images.
                         </p>
     
                         <p>
-                            Cloud technologies: ML-pipeline<br>
+                            <b>Cloud technologies: ML-pipeline</b><br><br>
                             Stage 1
                         </p>
                         <ul>
@@ -184,7 +172,8 @@
                                 Need for Model Deployment
                             </li>
                         </ul>
-    
+                        <img src="./assets/scheme-1.png" alt="Scheme 1">
+
                         <p>
                             Stage 2
                         </p>
@@ -208,6 +197,7 @@
                                 Interaction with the service through a Telegram bot                            
                             </li>
                         </ul>
+                        <img src="./assets/scheme-2.png" alt="Scheme 2">
                     </div>
 
                     <div id="section-4" class="article-section">                    
@@ -363,29 +353,17 @@
 
             <footer>
                 <img src="./assets/footer-pic.jpg" />
-                <div class="footer-list">
-                    <ul class="nav-links">
+                    <ul class="footer-list">
                         <a href="#about">О нас</a>
                         <a href="#team">Команда</a>
-                        <a href="#projects">Наши проекты</a>
+                        <a href="#projects">Проекты</a>
                         <a href="mailto:hello@scifly.ai">hello@scifly.ai</a>
-                        <!-- <a href="#team">Eng</a> -->
                     </ul>
-
-                </div>
             </footer>
+
         </main>
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
-        <!-- JS modal menu -->
-        <script>
-            function toggleMenu() {
-                var menuModal = document.getElementById('menuModal');
-                menuModal.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
-                var nav = document.getElementById('nav')
-                nav.style.display = (menuModal.style.display === 'none' || menuModal.style.display === '') ? 'flex' : 'none';
-            }
-        </script>
 
     </body>
 
