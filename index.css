@@ -86,21 +86,33 @@ img {
 .project-card {
     display: flex;
     flex-direction: column;
-    /* width: 68%; */
     align-items: flex-start;
+    padding: 1em;
     gap: 16px;
     background-color: #F5F5F5;
-    transition: padding 0.3s ease, border 0.3s ease;
+    border: 1px solid #f5f5f5;
+    border-radius: 24px;
+    transition: border 0.3s ease, background 0.3s ease;
 }
 
 .project-card:hover {
-    padding: 0.5em;
+    padding: 1em;
     border-radius: 24px;
     border: 1px solid #00262626;
+    background-color: #f3f0f0;
+}
+
+.margin-top {
+    margin-top: 1rem;
 }
 
 .project-wrap a:hover {
-    border: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.project-wrap a:hover .tag {
+    background-color: #00262629;
+    border: 1px solid #98b7d4b7;
 }
 
 .project-card-short {
@@ -165,6 +177,7 @@ img {
     align-self: center;
     border-radius: 20px;
     padding: 0.5em 1em;
+    transition: background 0.3s ease, border 0.3s ease;
 }
 
 .tag p{
