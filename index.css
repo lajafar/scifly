@@ -206,6 +206,20 @@ img {
     gap: 6px;
 }
 
+.publications-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.publication-card {
+    display: flex;
+    width: 342px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
 /* Team section */
 
 .team-wrap, 
@@ -634,6 +648,11 @@ a:hover{
         display: flex;
     }
 
+    .publications-wrap {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
     /* Pelican project styles */
 
     .article-wrap {
