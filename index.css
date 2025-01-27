@@ -206,18 +206,39 @@ img {
     gap: 6px;
 }
 
-.publications-wrap {
+.news-wrap {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
 
-.publication-card {
+.news-card {
     display: flex;
     width: 342px;
     flex-direction: column;
     align-items: flex-start;
     flex-shrink: 0;
+}
+
+/* Articles and publications section */
+
+.publication-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-bottom: 1px solid #000;
+    transition: padding 0.3s ease, background 0.3s ease;
+}
+
+.publication-item-link:hover {
+    background-color: #e6e6e6;
+    padding-left: 4px;
+}
+
+.publication-item-link p {
+    flex: 1 0 0;
 }
 
 /* Team section */
@@ -671,6 +692,13 @@ a:hover{
     .sticky-nav {
         position: unset;
         margin-top: 0;
+    }
+
+    .news-wrap {
+        flex-direction: column;
+    }
+    .news-card {
+        width: 100%;
     }
 
 }
